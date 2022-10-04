@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desconto Cinema</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="principalContainer">
+        <header class="inputFields">
+            <input type="number" name="Age" id="age" placeholder="Idade" class="age" >
+            <button onclick="add()" class="addBtn">Adicionar</button>
+        </header>
+
+        <main class="tableDisplay">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Idade</th>
+                        <th>Valor</th>
+                        <th>Desconto</th>
+                    </tr>
+                </thead>
+                <tbody id="tbodyInfo">
+                    <tr>
+                        <td class="darkRow" id="1"></td>
+                        <td class="darkRow" id="2"></td>
+                        <td class="darkRow" id="3"></td>
+                    </tr>
+                    <tr>
+                        <td class="lightRow" id="4"></td>
+                        <td class="lightRow" id="5"></td>
+                        <td class="lightRow" id="6"></td>
+                    </tr>
+                    <tr>
+                        <td class="darkRow" id="7"></td>
+                        <td class="darkRow" id="8"></td>
+                        <td class="darkRow" id="9"></td>
+                    </tr>
+                    <tr>
+                        <td class="lightRow" id="10"></td>
+                        <td class="lightRow" id="11"></td>
+                        <td class="lightRow" id="12"></td>
+                    </tr>
+                    <tr>
+                        <td class="darkRow" id="13"></td>
+                        <td class="darkRow" id="14"></td>
+                        <td class="darkRow" id="15"></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2" style="text-align: start;">Média das idades</td>
+                        <td style="text-align: end;" id="ageAvg"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: start;">Total geral</td>
+                        <td style="text-align: end;" id="total"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: start;">Total com desconto</td>
+                        <td style="text-align: end;" id="totalDiscount"></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </main>
+
+        <footer>
+            <button class="addBtn" hidden id="clear" onclick="clearPage()">Limpar Lista</button>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
